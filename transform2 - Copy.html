@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .container{
+            border: 1px solid rgb(157, 44, 44);
+            height:700px;
+            width:700px;
+            background-color: rgb(91, 29, 191);
+            margin: 50px;
+            
+        }
+        .div1{
+            border:1px solid rgb(0, 0, 0);
+            background-color:rgb(127, 229, 25);
+            padding:30px;
+            width:100px;
+            margin-left:300px;
+            margin-top: -500px;
+            font-size: larger;
+        }
+        input[value="translate"]:checked ~.div1{
+            transform: translate(50px);
+        }
+        input[value="rotate"]:checked ~.div1{
+            transform: rotate(40deg);
+        }
+        input[value="skew"]:checked ~.div1{
+            transform: skew(40deg);
+        }
+        input[value="scale"]:checked~.div1{
+            transform: scale(2);
+        }
+        input[value="rotatex"]:checked~.div1{
+            transform: rotateX(30deg);
+
+        }
+        input[value="rotatey"]:checked ~.div1{
+            transform: rotatey(50deg);
+        }
+        input[value="skewx"]:checked ~ .div1{
+            transform: skewX(60deg);
+        }
+        input[value="skewy"]:checked ~ .div1{
+            transform: skewy(50deg);
+        }
+        input[value="scalex"]:checked~.div1{
+            transform: scaleX(3);
+        }
+        input[value="scaley"]:checked~.div1{
+            transform: scaley(3);
+        }
+        input[value="translatex"]:checked~.div1{
+            transform: translatex(50px);
+        }
+        input[value="translatey"]:checked~.div1{
+            transform: translatey(60px);
+        }
+        span{
+            background-color: black;
+            color: aqua;
+            padding: 10px;
+          padding-left: 20px;
+          margin:5px;
+        }
+    </style>
+</head>
+<body><div class="container"><br><br>
+    <input type="radio" value="translate" name="transform"/><span>transform : translate (50px)</span><br><br><br>
+    <input type="radio" value="rotate" name="transform"/> <span>transform : rotate(40deg) </span><br><br><br>
+   
+    <input type="radio" value="skew" name="transform"/><span>transform : skew(40deg)</span><br><br><br>
+    <input type="radio" value="scale" name="transform"/><span>transform : scale (2)</span><br><br><br>
+    <input type="radio" value="rotatex" name="transform"/><span>transform : rotatex(30deg)</span><br><br><br>
+    <input type="radio" value="rotatey"name="transform"/><span>transform : rotatey(50deg)</span><br><br><br>
+    <input type="radio" value="skewx" name="transform"/><span>transform : skewx(60deg)</span><br><br><br>
+    <input type="radio" value="skewy" name="transform"/><span>transform : skewy(50deg)</span><br><br><br>
+    <input type="radio" value="scalex" name="transform"/><span>transform : scalex(3)</span><br><br><br>
+    <input type="radio" value="scaley" name="transform"/><span>transform : scaley(3)</span><br><br><br>
+    <input type="radio" value="translatex" name="transform"/><span>transform : translatex(50px)</span><br><br><br>
+    <input type="radio" value="translatey" name="transform"/><span>transform : translatey(60px)</span><br><br><br>
+    
+    <div class="div1">transform</div>
+    </div>
+
+    
+    
+</body>
+</html>
